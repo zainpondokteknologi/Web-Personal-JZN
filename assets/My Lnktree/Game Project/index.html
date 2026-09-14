@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Sakura Adventure</title>
+</head>
+<body>
+<div id="game">
+  <canvas id="canvas" width="960" height="540"></canvas>
+
+  <div id="hud">
+    <div id="hudTitle">🌸 Sakura Adventure</div>
+    <div id="hpRow">
+      <span id="hpIcon">❤</span>
+      <div id="bar"><div id="hp"></div></div>
+    </div>
+    <div id="statsRow">
+      <div id="score">⚔️ Musuh dikalahkan: <span id="scoreNum">0</span></div>
+    </div>
+    <div id="combo" class="hidden">🔥 Combo x<span id="comboNum">0</span></div>
+  </div>
+
+  <div id="help">WASD / ←↑↓→ = Bergerak &nbsp;|&nbsp; SPACE = Serang</div>
+
+  <div id="touch">
+    <div class="pad">
+      <button class="up" data-key="ArrowUp">▲</button>
+      <button class="left" data-key="ArrowLeft">◀</button>
+      <button class="down" data-key="ArrowDown">▼</button>
+      <button class="right" data-key="ArrowRight">▶</button>
+    </div>
+    <button id="attack">⚔️</button>
+  </div>
+
+  <div id="titleScreen">
+    <div id="titleCard">
+      <div id="titleEmoji">🌸 ⚔️ 🌸</div>
+      <h1>Sakura Adventure</h1>
+      <p>Kalahkan musuh, jaga HP-mu, dan raih skor tertinggi!</p>
+      <button id="startBtn">MULAI PETUALANGAN</button>
+    </div>
+  </div>
+
+  <div id="gameOverScreen" class="hidden">
+    <div id="gameOverCard">
+      <div id="gameOverEmoji">💥</div>
+      <h1>GAME OVER</h1>
+      <p id="finalScoreText">Musuh dikalahkan: 0</p>
+      <button id="restartBtn">MAIN LAGI</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
